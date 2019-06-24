@@ -23,7 +23,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             insertProdutos = "INSERT INTO Produtos(Id, Nome, Categoria, Preco) VALUES(prod_seq.nextval, :nome, :categoria, :preco)";
         }
 
-        public void Dispose()
+        public void Dispose() 
         {
             conexao.Close();
         }
